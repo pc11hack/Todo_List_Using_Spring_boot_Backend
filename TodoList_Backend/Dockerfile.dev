@@ -1,0 +1,7 @@
+FROM openjdk:19
+
+WORKDIR /newApp
+
+COPY . /newApp
+
+CMD [ "./mvnw" , "spring-boot:run" ]
